@@ -40,13 +40,8 @@ var pageScript = {
             window.location.href = "/menus"
         }
 
-        let price = accounting.formatMoney(data.price, newArcafe.defaultCurrency+" ", 0, ".", ",").split(".");
-        if(price.length > 1){
-            price.pop()
-        }
         $(document).find(`#menu-title`).text(data.title)
         $(document).find(`#menu-submenu`).text(newArcafe.capitalizeEachWord(data.category))
-        $(document).find(`#menu-price`).html(`<span>${price}K</span>`)
         $(document).find(`#menu-desc`).text(data.desc)
         $(document).find(`#menu-image`).attr('src', `assets/${data.imagePath}`)
         $(document).find(`#menu-marker`).attr('src', `assets/${data?.markerPath}`)

@@ -1,225 +1,59 @@
 var data = {
-    coffee:[
-        {
-            id:0,
-            title: 'Americano',
-            price: 13000,
-            imagePath: 'images/menus/menu-2.jpg',
-            desc:'A small river named Duden flows by their place and supplies'
-        },
-        {
-            id:1,
-            title: 'Vietname Drip',
-            price: 13000,
-            imagePath: 'images/menus/menu-2.jpg',
-            desc:'A small river named Duden flows by their place and supplies'
-        },
-        {
-            id:1,
-            title: 'Cafe Latte',
-            price: 15000,
-            imagePath: 'images/menus/menu-2.jpg',
-            desc:'A small river named Duden flows by their place and supplies'
-        },
-        {
-            id:1,
-            title: 'V60',
-            price: 15000,
-            imagePath: 'images/menus/menu-2.jpg',
-            desc:'A small river named Duden flows by their place and supplies'
-        },
-        {
-            id:1,
-            title: 'Japanesse Style',
-            price: 17000,
-            imagePath: 'images/menus/menu-2.jpg',
-            desc:'A small river named Duden flows by their place and supplies'
-        },
-        {
-            id:1,
-            title: 'Caramel Machiato',
-            price: 20000,
-            imagePath: 'images/menus/menu-2.jpg',
-            desc:'A small river named Duden flows by their place and supplies'
-        },
-        {
-            id:1,
-            title: 'Es Kopi Singgah',
-            price: 17000,
-            imagePath: 'images/menus/menu-2.jpg',
-            desc:'Es Kopi Susu Pisang'
-        },
-        {
-            id:1,
-            title: 'Es Kopi Bersua',
-            price: 17000,
-            imagePath: 'images/menus/menu-2.jpg',
-            desc:'Es Kopi Sus Gula Aren'
-        }
-    ],
-    mocktail:[
-        {
-            id:0,
-            title: 'Strawberry Cuite',
-            price: 18000,
-            imagePath: `images/menus/${"Strawberry Cuite".replace(/\s/g, "_").toLowerCase()}/menu-2.jpg`,
-            desc:'A small river named Duden flows by their place and supplies',
-            markerPath:`images/menus/${"Strawberry Cuite".replace(/\s/g, "_").toLowerCase()}/marker/0.png`
-        },
-        {
-            id:0,
-            title: 'Lychee Splash',
-            price: 18000,
-            imagePath: 'images/menus/menu-2.jpg',
-            desc:'A small river named Duden flows by their place and supplies'
-        },
-    ],
-    tea:[
-        {
-            id:0,
-            title: 'Sweet Tea',
-            price: 8000,
-            imagePath: 'images/menus/menu-2.jpg',
-            desc:'A small river named Duden flows by their place and supplies'
-        },
-        {
-            id:0,
-            title: 'Lemon Tea',
-            price: 15000,
-            imagePath: 'images/menus/menu-2.jpg',
-            desc:'A small river named Duden flows by their place and supplies'
-        },
-        {
-            id:0,
-            title: 'Lychee Tea',
-            price: 15000,
-            imagePath: 'images/menus/menu-2.jpg',
-            desc:'A small river named Duden flows by their place and supplies'
-        }
-    ],
-    flavorCoffee:[
-        {
-            id:0,
-            title: 'Vanilla',
-            price: 18000,
-            imagePath: 'images/menus/menu-2.jpg',
-            desc:'A small river named Duden flows by their place and supplies'
-        },
-        {
-            id:0,
-            title: 'Caramel',
-            price: 18000,
-            imagePath: 'images/menus/menu-2.jpg',
-            desc:'A small river named Duden flows by their place and supplies'
-        },
-        {
-            id:0,
-            title: 'Hazelnut',
-            price: 18000,
-            imagePath: 'images/menus/menu-2.jpg',
-            desc:'A small river named Duden flows by their place and supplies'
-        },{
-            id:0,
-            title: 'Pandan',
-            price: 18000,
-            imagePath: 'images/menus/menu-2.jpg',
-            desc:'A small river named Duden flows by their place and supplies'
-        },
-    ],
-    milkBased:[
-        {
-            id:0,
-            title: 'Green Tea',
-            price: 17000,
-            imagePath: 'images/menus/menu-2.jpg',
-            desc:'A small river named Duden flows by their place and supplies'
-        },
-        {
-            id:0,
-            title: 'Red Velvet',
-            price: 17000,
-            imagePath: 'images/menus/menu-2.jpg',
-            desc:'A small river named Duden flows by their place and supplies'
-        },
-        {
-            id:0,
-            title: 'Chocolate',
-            price: 17000,
-            imagePath: 'images/menus/menu-2.jpg',
-            desc:'A small river named Duden flows by their place and supplies'
-        },
-        {
-            id:0,
-            title: 'Strawberry Milk Jam',
-            price: 17000,
-            imagePath: 'images/menus/menu-2.jpg',
-            desc:'A small river named Duden flows by their place and supplies'
-        },
-    ],
-     snack:[
-        {
-            id:0,
-            title: 'French Fries',
-            price: 13000,
-            imagePath: 'images/menus/menu-2.jpg',
-            desc:'A small river named Duden flows by their place and supplies'
-        },
-        {
-            id:0,
-            title: 'Otak-otak',
-            price: 13000,
-            imagePath: 'images/menus/menu-2.jpg',
-            desc:'A small river named Duden flows by their place and supplies'
-        },
-        {
-            id:0,
-            title: 'Sosis',
-            price: 13000,
-            imagePath: 'images/menus/menu-2.jpg',
-            desc:'A small river named Duden flows by their place and supplies'
-        },
-        {
-            id:0,
-            title: 'Nugget',
-            price: 15000,
-            imagePath: 'images/menus/menu-2.jpg',
-            desc:'A small river named Duden flows by their place and supplies'
-        },
-        {
-            id:0,
-            title: 'Mozzarella Goreng',
-            price: 15000,
-            imagePath: 'images/menus/menu-2.jpg',
-            desc:'A small river named Duden flows by their place and supplies'
-        },
-        {
-            id:0,
-            title: 'Platter',
-            price: 20000,
-            imagePath: 'images/menus/menu-2.jpg',
-            desc:'A small river named Duden flows by their place and supplies'
-        },
-     ],
-     indomie:[
-        {
-            id:0,
-            title: 'Rebus / Goreng',
-            price: 8000,
-            imagePath: 'images/menus/menu-2.jpg',
-            desc:'A small river named Duden flows by their place and supplies'
-        },
-     ]
+  mata: [
+    {
+      id: 0,
+      title: "Mata",
+      imagePath: "images/menus/eye.jpeg",
+      desc: "Diperlukan oleh manusia dalam mengirim rangsangan untuk dikirim ke otak",
+      markerPath: `images/markers/Eye.png`,
+    },
+  ],
+  hidung: [
+    {
+      id: 1,
+      title: "Hidung",
+      imagePath: "images/menus/nose.jpeg",
+      desc: "Mempunyai tiga fungsi, yaitu alat pernafasan, mencium bau dan menyaring udara.",
+      markerPath: `images/markers/Nose.png`,
+    },
+  ],
+  telinga: [
+    {
+      id: 2,
+      title: "Telinga",
+      imagePath: "images/menus/ear.jpeg",
+      desc: "Untuk mengetahui berbagai macam getaran bunyi sekaligus sebagai penjaga keseimbangan.",
+      markerPath: `images/markers/Ear.png`,
+    },
+  ],
+  lidah: [
+    {
+      id: 3,
+      title: "Lidah",
+      imagePath: "images/menus/tongue.jpeg",
+      desc: "Sebagai perasa, memudahkan proses pengunyahan dan pembentuk huruf.",
+      markerPath: `images/markers/Tongue.png`,
+    },
+  ],
+  kulit: [
+    {
+      id: 4,
+      title: "Kulit",
+      imagePath: "images/menus/skin.jpeg",
+      desc: "Bisa dijadikan sebagai pelindung tubuh manusia dari berbagai macam gangguan dan juga sebagai tempat untuk mengeluarkan kringat.",
+      markerPath: `images/markers/Skin.png`,
+    },
+  ],
+};
+
+function returnJson(data, statusCode = 200) {
+  return {
+    status: true,
+    statusCode,
+    data,
+  };
 }
 
-function returnJson(data, statusCode = 200){
-    return {
-        status: true,
-        statusCode,
-        data
-    }
-}
-
-exports.list = function(req, res){
-    
-    res.status(200).json(returnJson(data, 200))
-}
+exports.list = function (req, res) {
+  res.status(200).json(returnJson(data, 200));
+};
